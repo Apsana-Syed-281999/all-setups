@@ -6,7 +6,7 @@ sudo wget https://download.sonatype.com/nexus/3/nexus-3.94.0-12-linux-x86_64.tar
 sudo tar -xvf nexus-3.94.0-12-linux-x86_64.tar.gz
 sudo adduser nexus
 sudo chown -R nexus:nexus /app/
-sudo sed -i '27  run_as_user="nexus"' /app/ nexus-3.94.0-12/bin/nexus
+sudo sed -i '27  run_as_user="nexus"' /app/nexus-3.94.0-12/bin/nexus
 sudo tee /etc/systemd/system/nexus.service > /dev/null << EOL
 [Unit]
 Description=nexus service
