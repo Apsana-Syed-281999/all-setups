@@ -3,7 +3,7 @@
 cd /opt/
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.8.100196.zip
 unzip sonarqube-9.9.8.100196.zip
-yum install java-17-amazon-corretto -y
+yum install java-21-amazon-corretto -y
 useradd sonar
 chown -R sonar:sonar sonarqube-9.9.8.100196
 su - sonar
